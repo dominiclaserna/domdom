@@ -1,0 +1,82 @@
+/* design.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh; /* Set body height to 100% of viewport height */
+  background-color: #f7f7f7; /* Set background color for the entire page */
+}
+
+.menu-bar {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Align buttons to the right */
+}
+
+.menu-bar button {
+  padding: 10px 15px;
+  border: 2px solid #ccc; /* Default border color */
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #ddd; /* Default background color */
+  color: #333; /* Default text color */
+}
+
+.menu-bar button.home {
+  background-color: #3498db;
+  border-color: #2980b9;
+  color: white;
+}
+
+.menu-bar button.reload {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+  color: white;
+}
+
+.menu-bar button:hover {
+  background-color: #555;
+}
+
+.subject-list-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 20px;
+  height: 100%; /* Set container height to 100% of parent (body) */
+  overflow-y: auto; /* Add a scrollbar if needed */
+  padding: 10px; /* Add some padding for better aesthetics */
+  background-color: #fff; /* Background color for the subject list container */
+}
+
+.subject-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex: 1; /* Grow and shrink to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content vertically */
+  background-color: #f2f2f2; /* Background color for each item */
+}
+
+.subject-info {
+  flex-grow: 1;
+}
+
+/* Add this style for the button within each list item */
+.subject-item button {
+  background-color: #ddd;
+}
+
+/* Add this style for the button within each list item on hover */
+.subject-item button:hover {
+  background-color: #ccc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
